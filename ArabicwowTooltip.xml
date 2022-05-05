@@ -1,0 +1,25 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\..\FrameXML\UI.xsd">
+
+    <GameTooltip name="ArabicwowAssistTooltip" frameStrata="TOOLTIP" hidden="true" parent="UIParent" inherits="GameTooltipTemplate">
+        <Scripts>
+            <OnLoad>
+                GameTooltip_OnLoad(self);
+				self.shoppingTooltips = { ShoppingTooltip1, ShoppingTooltip2 };
+				if (BattlePetTooltip) then
+                    BattlePetTooltip:Hide();
+                end
+            </OnLoad>
+            <OnHide>
+                GameTooltip_OnHide(self);
+				ShoppingTooltip1:Hide();
+                ShoppingTooltip2:Hide();
+                if (BattlePetTooltip) then
+                    BattlePetTooltip:Hide();
+                end
+            </OnHide>
+            <OnUpdate function="GameTooltip_OnUpdate"/>
+        </Scripts>
+    </GameTooltip>
+</Ui>

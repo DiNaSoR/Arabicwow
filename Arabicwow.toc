@@ -1,0 +1,56 @@
+## Interface: 90200
+## Title: Arabicwow
+## Notes: Translate Quest data, Item ToolTips and Spell ToolTips into Arabic text.
+## Version: 0.0.4
+## Author: Kunio (Dragonarab)
+## OptionalDeps: Ace3, LibStub, CallbackHandler
+## SavedVariables: ArabicwowDB
+
+## X-Curse-Project-Name: Arabicwow
+## X-Curse-Project-ID: 82274
+## X-Curse-Repository-ID: wow/Arabicwow/jyabura
+
+embeds.xml
+
+#Data\Quest\Arabicwow_Quest.lua
+#Data\Quest\Arabicwow_QuestData.lua
+#Data\Quest\Arabicwow_Quest_Newbie.lua
+#Data\Quest\Arabicwow_QuestIndex.lua
+
+Data\Achievement\Arabicwow_Achievement.lua
+Data\Achievement\Arabicwow_AchievementData.lua
+Data\Achievement\Arabicwow_AchievementIndex.lua
+
+Data\Item\Arabicwow_Item.lua
+Data\Item\Arabicwow_ItemData.lua
+
+Data\Spell\Arabicwow_Spell.lua
+Data\Spell\Arabicwow_SpellData.lua
+Data\Spell\Arabicwow_SpellNewbie.lua
+Data\Spell\Arabicwow_SpellChain.lua
+Data\Spell\Arabicwow_SpellGlyph.lua
+
+ArabicwowDebug.xml
+
+#ArabicwowTemplate.xml
+#ArabicwowQuest.lua
+
+#ArabicwowQuestLog.xml
+#ArabicwowQuestLog.lua
+#ArabicwowWorldMapQuest.xml
+#ArabicwowWorldMapQuest.lua
+#ArabicwowQuestGossip.xml
+#ArabicwowQuestGossip.lua
+
+ArabicwowToolTip.lua
+ArabicwowGameToolTip.lua
+#ArabicwowItemRefTooltip.lua
+
+#ArabicwowTooltip.xml
+#ArabicwowBuffToolTip.lua
+#ArabicwowGlyphToolTip.lua
+
+Arabicwow.lua
+
+locales\Arabicwow-KW.lua
+

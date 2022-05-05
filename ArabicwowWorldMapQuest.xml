@@ -1,0 +1,51 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\..\FrameXML\UI.xsd">
+
+    <ScrollFrame name="ArabicwowWorldMapQuestScrollFrame" parent="WorldMapQuestScrollFrame" inherits="UIPanelScrollFrameTemplate">
+        <Size>
+            <AbsDimension x="278" y="199"/>
+        </Size>
+        <Anchors>
+            <Anchor point="LEFT" relativeTo="WorldMapQuestRewardScrollFrame" relativePoint="RIGHT"> 
+                <Offset>
+                    <AbsDimension x="30" y="0"/>
+                </Offset>
+            </Anchor>
+        </Anchors>
+        <Layers>
+            <Layer level="BORDER">
+                <Texture file="Interface\DialogFrame\UI-DialogBox-Divider">
+                    <Size>
+                        <AbsDimension x="308" y="8"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="TOPLEFT">
+                            <Offset x="-5" y="8"/>
+                        </Anchor>
+                    </Anchors>
+                    <TexCoords left="0.0" right="0.75390625" top="0.0" bottom="0.5"/>
+                </Texture>
+            </Layer>
+        </Layers>
+        <ScrollChild>
+            <Frame name="ArabicwowWorldMapQuestScrollDetailFrame" inherits="ArabicwowQuestDetailFrameTemplate">
+                <Size>
+                    <AbsDimension x="276" y="199"/>
+                </Size>
+                <Anchors>
+                    <Anchor point="TOPLEFT"/>
+                </Anchors>
+            </Frame>
+        </ScrollChild>
+    </ScrollFrame>
+
+    <CheckButton name="ArabicwowWorldMapQuestShowArabic" parent="WorldMapTrackQuest" inherits="OptionsCheckButtonTemplate" checked="true">
+        <Size x="24" y="24"/>
+        <Scripts>
+            <OnClick>
+                ArabicwowWorldMapQuest:OnClickShowArabic()
+            </OnClick>
+        </Scripts>
+    </CheckButton>
+</Ui>

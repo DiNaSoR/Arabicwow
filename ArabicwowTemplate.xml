@@ -1,0 +1,174 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\..\FrameXML\UI.xsd">
+
+    <Frame name="ArabicwowDecorationFrameTemplate" virtual="true">
+        <Size>
+            <AbsDimension x="148" y="16"/>
+        </Size>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture name="$parentTopRight" file="Interface\Common\Common-Input-Border">
+                    <Size>
+                        <AbsDimension x="8" y="8"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="TOPRIGHT"/>
+                    </Anchors>
+                    <TexCoords left="0.9375" right="1.0" top="0" bottom="0.25"/>
+                </Texture>
+                <Texture name="$parentBottomRight" file="Interface\Common\Common-Input-Border">
+                    <Size>
+                        <AbsDimension x="8" y="8"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="BOTTOMRIGHT"/>
+                    </Anchors>
+                    <TexCoords left="0.9375" right="1.0" top="0.375" bottom="0.625"/>
+                </Texture>
+                <Texture name="$parentRight" file="Interface\Common\Common-Input-Border">
+                    <Size>
+                        <AbsDimension x="8" y="0"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="TOP" relativeTo="$parentTopRight" relativePoint="BOTTOM"/>
+                        <Anchor point="BOTTOM" relativeTo="$parentBottomRight" relativePoint="TOP"/>
+                    </Anchors>
+                    <TexCoords left="0.9375" right="1.0" top="0.25" bottom="0.375"/>
+                </Texture>
+                <Texture name="$parentTopLeft" file="Interface\Common\Common-Input-Border">
+                    <Size>
+                        <AbsDimension x="8" y="8"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="TOPLEFT"/>
+                    </Anchors>
+                    <TexCoords left="0" right="0.0625" top="0" bottom="0.25"/>
+                </Texture>
+                <Texture name="$parentBottomLeft" file="Interface\Common\Common-Input-Border">
+                    <Size>
+                        <AbsDimension x="8" y="8"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT"/>
+                    </Anchors>
+                    <TexCoords left="0" right="0.0625" top="0.375" bottom="0.625"/>
+                </Texture>
+                <Texture name="$parentLeft" file="Interface\Common\Common-Input-Border">
+                    <Size>
+                        <AbsDimension x="8" y="0"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeTo="$parentTopLeft" relativePoint="BOTTOMLEFT"/>
+                        <Anchor point="BOTTOMLEFT" relativeTo="$parentBottomLeft" relativePoint="TOPLEFT"/>
+                    </Anchors>
+                    <TexCoords left="0" right="0.0625" top="0.25" bottom="0.375"/>
+                </Texture>
+                <Texture name="$parentTopMiddle" file="Interface\Common\Common-Input-Border">
+                    <Size>
+                        <AbsDimension x="100" y="8"/>
+                    </Size>
+                    <Anchors>                                
+                        <Anchor point="RIGHT" relativeTo="$parentTopRight" relativePoint="LEFT"/>
+                        <Anchor point="LEFT" relativeTo="$parentTopLeft" relativePoint="RIGHT"/>
+                    </Anchors>
+                    <TexCoords left="0.0625" right="0.9375" top="0" bottom="0.25"/>
+                </Texture>
+                <Texture name="$parentMiddleMiddle" file="Interface\Common\Common-Input-Border">
+                    <Size>
+                        <AbsDimension x="100" y="4"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeTo="$parentTopLeft" relativePoint="BOTTOMRIGHT"/>
+                        <Anchor point="BOTTOMRIGHT" relativeTo="$parentBottomRight" relativePoint="TOPLEFT"/>
+                    </Anchors>
+                    <TexCoords left="0.0625" right="0.9375" top="0.25" bottom="0.375"/>
+                </Texture>
+                <Texture name="$parentBottomMiddle" file="Interface\Common\Common-Input-Border">
+                    <Size>
+                        <AbsDimension x="100" y="8"/>
+                    </Size>
+                    <Anchors>                                
+                        <Anchor point="RIGHT" relativeTo="$parentBottomRight" relativePoint="LEFT"/>
+                        <Anchor point="LEFT" relativeTo="$parentBottomLeft" relativePoint="RIGHT"/>
+                    </Anchors>
+                    <TexCoords left="0.0625" right="0.9375" top="0.375" bottom="0.625"/>
+                </Texture>
+                <FontString name="$parentText" inherits="GameFontNormalSmall">
+                    <Anchors>
+                        <Anchor point="TOPRIGHT" relativeTo="$parentTopRight" relativePoint="BOTTOMLEFT">
+                            <Offset>
+                                <AbsDimension x="0" y="6"/>
+                            </Offset>
+                        </Anchor>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+    </Frame>
+
+    <Frame name="ArabicwowQuestDetailFrameTemplate" virtual="true">
+        <Size>
+            <AbsDimension x="276" y="341"/>
+        </Size>
+        <Layers>
+            <Layer level="ARTWORK">
+                <FontString name="$parentTitle1" inherits="GameFontNormal" justifyH="RIGHT" justifyV="TOP" nonspacewrap="true">
+                    <Size>
+                        <AbsDimension x="276" y="14"/>
+                    </Size>
+                </FontString>
+                <FontString name="$parentText1" inherits="GameFontNormal" justifyH="RIGHT" justifyV="TOP" nonspacewrap="true">
+                    <Size>
+                        <AbsDimension x="276" y="36"/>
+                    </Size>
+                    <Color r="1" g="1" b="1" a="1" />
+                </FontString>
+                <FontString name="$parentTitle2" inherits="GameFontNormal" justifyH="RIGHT" justifyV="TOP" nonspacewrap="true">
+                    <Size>
+                        <AbsDimension x="276" y="14"/>
+                    </Size>
+                </FontString>
+                <FontString name="$parentText2" inherits="GameFontNormal" justifyH="RIGHT" justifyV="TOP" nonspacewrap="true">
+                    <Size>
+                        <AbsDimension x="276" y="36"/>
+                    </Size>
+                    <Color r="1" g="1" b="1" a="1" />
+                </FontString>
+                <FontString name="$parentTitle3" inherits="GameFontNormal" justifyH="RIGHT" justifyV="TOP" nonspacewrap="true">
+                    <Size>
+                        <AbsDimension x="276" y="14"/>
+                    </Size>
+                </FontString>
+                <FontString name="$parentText3" inherits="GameFontNormal" justifyH="RIGHT" justifyV="TOP" nonspacewrap="true">
+                    <Size>
+                        <AbsDimension x="276" y="36"/>
+                    </Size>
+                    <Color r="1" g="1" b="1" a="1" />
+                </FontString>
+                <FontString name="$parentTitle4" inherits="GameFontNormal" justifyH="RIGHT" justifyV="TOP" nonspacewrap="true">
+                    <Size>
+                        <AbsDimension x="276" y="14"/>
+                    </Size>
+                </FontString>
+                <FontString name="$parentText4" inherits="GameFontNormal" justifyH="RIGHT" justifyV="TOP" nonspacewrap="true">
+                    <Size>
+                        <AbsDimension x="276" y="36"/>
+                    </Size>
+                    <Color r="1" g="1" b="1" a="1" />
+                </FontString>
+                <FontString name="$parentTitle5" inherits="GameFontNormal" justifyH="RIGHT" justifyV="TOP" nonspacewrap="true">
+                    <Size>
+                        <AbsDimension x="276" y="14"/>
+                    </Size>
+                </FontString>
+                <FontString name="$parentText5" inherits="GameFontNormal" justifyH="RIGHT" justifyV="TOP" nonspacewrap="true">
+                    <Size>
+                        <AbsDimension x="276" y="36"/>
+                    </Size>
+                    <Color r="1" g="1" b="1" a="1" />
+                </FontString>
+            </Layer>
+        </Layers>
+    </Frame>
+</Ui>
